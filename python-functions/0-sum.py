@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def add(a, b):
     while b != 0:
         carry = a & b
@@ -8,7 +9,6 @@ def add(a, b):
 print(add(1, 2))
 print(add(98, 0))
 print(add(100, -2))
-print(add(-100, -2))
-print(add(0, 0))
+
 
 

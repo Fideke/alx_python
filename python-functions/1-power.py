@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def pow(a, b):
     while b != 0:
         carry = a & b
