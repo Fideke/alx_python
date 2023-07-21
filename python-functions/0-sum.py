@@ -1,14 +1,11 @@
-#!/usr/bin/env python3
+
 def add(a, b):
-    while b != 0:
-        carry = a & b
-        a = a ^ b
-        b = carry << 1
-    return a
+   sum = a + b
+   return sum
     
-print(add(1, 2))
-print(add(98, 0))
-print(add(100, -2))
+print(add(1, 2), end="\n")
+print(add(98, 0), end="\n")
+print(add(100, -2), end="\n")
 
 
 
