@@ -2,7 +2,7 @@ def validate_pasword(password):
     if len(password) < 0:
         return False
     
-    elif not any(char.isupper() for char in password):
+    elif not any(char.is_upper() for char in password):
         return False
     elif not any(char.islower() for char in password):
         return False
