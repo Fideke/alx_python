@@ -1,7 +1,7 @@
 """
 an empty class
 """
-class BaseGeometry():
+class BaseGeometry:
     """
     empy class
     """
