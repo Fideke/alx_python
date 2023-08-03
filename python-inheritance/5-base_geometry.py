@@ -11,12 +11,18 @@ class BaseGeometry:
     a function that defines area and raise exception
     """
     def area(self):
+        """
+        a function area
+        """
         raise Exception("area() is not implemented")
 
         """
         a function that defines name , value
         """
     def integer_validator(self, name, value):
+        """
+        a function
+        """
         if value is not int:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
