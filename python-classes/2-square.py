@@ -1,9 +1,12 @@
-"""module with a class that defines a square"""
+"""
+a class that defines a square
+"""
 class Square:
-    """defining square object
-    args:
-    size(param
-    ) is assumed to be an int"""
+    """
+    defining square object
+   
+    size is assumed to be an int
+    """
     def __init__(self, size=0):
             self.__size = size 
             """private attribute"""
@@ -13,7 +16,9 @@ class Square:
                   break
             else:           
                 raise TypeError("size must be an integer")
-    """public instance method takes parameter self and can be accessed both inside and outside class"""
+    """
+    public instance method 
+    
+    """
     def area(self):
-          """area"""
-          return self.__size ** 2
+     return self.__size ** 2
