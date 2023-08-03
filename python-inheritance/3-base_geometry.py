@@ -6,4 +6,6 @@ class BaseGeometry:
     empy class
     """
     pass
+
+print(dir(BaseGeometry))
   
