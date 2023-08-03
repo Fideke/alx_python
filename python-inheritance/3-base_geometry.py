@@ -1,11 +1,11 @@
 """
 an empty class
 """
-class BaseGeometry:
+class BaseGeometry():
     """
     empy class
     """
     pass
 
-print(dir(BaseGeometry))
+
   
