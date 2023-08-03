@@ -5,7 +5,6 @@ class BaseGeometry:
     """
     empy class
     """
-    pass
 
     """
     a function that defines area and raise exception
