@@ -18,4 +18,8 @@ class BaseGeometry(metaclass=NoInitSubclassMeta):
         return [attr for attr in super().__dir__() if attr != '__init_subclass__']
 
     def area(self):
+        """
+        def area that raises an exception with message
+        area is not implemented
+        """
         raise Exception("area() is not implemented")
