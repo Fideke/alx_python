@@ -2,6 +2,7 @@
 create a file named models with an empty fil __init__.py,
 inside with this file, the folder will become python package
 """
+
 class Base:
    """
    create a file named models/base.py
