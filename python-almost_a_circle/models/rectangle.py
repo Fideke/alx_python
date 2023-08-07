@@ -28,28 +28,37 @@ class Rectangle(Base):
 
         @property
         def width(self):
+         
          """protect attribute of our class"""
+
          return self.__width
         
         @property
         def height(self):
+
             """protect attribute of our class"""
+
             return self.__height
         
         @property
         def x(self):
+         
          """protect attribute of our class"""
+
          return self.__x
         
         @property
         def y(self):
+         
          """protect attribute of our class"""
+
          return self.__y
         
         
         @width.setter
         def width(self, value):    
              """validate what adeveloper is trying to assign a variable"""
+
              if type(value) is not int:
                 raise TypeError("width must be an integer")
              if value <= 0:
@@ -60,6 +69,7 @@ class Rectangle(Base):
         @height.setter
         def height(self, value):
             """validate what adeveloper is trying to assign a variable"""
+
             if type(value) is not int:
                raise TypeError("height must be an integer")
             if value <= 0:
@@ -70,6 +80,7 @@ class Rectangle(Base):
         @x.setter
         def x(self, value):
             """validate what adeveloper is trying to assign a variable"""
+
             if type(value) is not int:
                raise TypeError("x must be an integer")
             if value < 0:
@@ -80,6 +91,7 @@ class Rectangle(Base):
         @y.setter
         def y(self, value):
             """validate what adeveloper is trying to assign a variable"""
+
             if type(value) is not int:
                raise TypeError("y must be an integer")
             if value < 0:
