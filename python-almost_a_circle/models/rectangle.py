@@ -28,11 +28,19 @@ class Rectangle(Base):
 
         @property
         def width(self):
+            """
+             protect attributes of our class
+            """
             return self.__width
         
         @width.setter
         def width(self, value):
-            self.__width = value
+             """
+             with the setter you are able to validate what adeveloper is trying 
+            to assign to a variable
+            """
+             self.__width = value
+             
             
 
         @property
@@ -49,10 +57,10 @@ class Rectangle(Base):
 
         @property
         def x(self):
-             """
+         """
              protect attributes of our class
-            """
-             return self.__x
+         """
+        return self.__x
         
         @x.setter
         def x(self, value):
