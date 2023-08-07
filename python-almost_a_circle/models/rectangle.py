@@ -1,0 +1,114 @@
+"""
+create a folder named models with an empty file __init__.py inside with this file,
+the folder will become a python package
+create a file named models/base.py
+"""
+class Base:
+    """
+    private class attribute __nb_objects = 0, class constructor: def __init__(self, id=None)
+    
+    """
+    __nb_objects = 0
+
+
+    def __init__(self, id=None):
+        """
+        if id is not none , assign the public instance
+        """
+        if id is not None:
+            self.id = id
+        else:
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
+        
+
+"""
+write the class Rectangle that inherits from Base
+"""
+class Rectangle(Base):
+    """
+    private instance attributes , each with its own public getter and setter
+    __width
+    __height
+    __x
+    __y
+    """
+
+    def __init__(self, width, height, x=0, y=0, id=None):
+        """
+        class constructor, call the super class with id, this super call with
+        use the logic of the __init__ of the Base class
+        Assign each arguement width, height, x, y to the right attribute
+        """
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
+        super().__init__(id)
+
+        @property
+        def width(self):
+            """
+            protect attributes of our class
+            
+            """
+            return self.__width
+        
+        @width.setter
+        def width(self, value):
+            self.__width = value
+            """
+            with the setter you are able to validate what adeveloper is trying 
+            to assign to a variable
+            """
+
+
+        @property
+        def height(self):
+            """
+             protect attributes of our class
+            """
+            return self.__height
+        
+        @height.setter
+        def height(self, value):
+            self.__height = value
+            """
+             with the setter you are able to validate what adeveloper is trying 
+            to assign to a variable
+            """
+
+        @property
+        def x(self):
+             """
+             protect attributes of our class
+            """
+             return self.__x
+        
+        @x.setter
+        def x(self, value):
+            self.__x = value
+            """
+             with the setter you are able to validate what adeveloper is trying 
+            to assign to a variable
+            """
+
+        @property
+        def y(self):
+            """
+             protect attributes of our class
+            """
+            return self.__y
+        
+
+        @y.setter
+        def y(self, value):
+            self.__y = value
+            """
+             with the setter you are able to validate what adeveloper is trying 
+            to assign to a variable
+            """
+
+
+
+        
