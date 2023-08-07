@@ -28,44 +28,46 @@ class Rectangle(Base):
 
         @property
         def width(self):
-         
          """protect attribute of our class"""
-
          return self.__width
         
+        @property
+        def height(self):
+            """protect attribute of our class"""
+            return self.__height
+        
+        @property
+        def x(self):
+         """protect attribute of our class"""
+         return self.__x
+        
+        @property
+        def y(self):
+         """protect attribute of our class"""
+         return self.__y
+        
+        
         @width.setter
-        def width(self, value):
-             
+        def width(self, value):    
              """validate what adeveloper is trying to assign a variable"""
-
              self.__width = value
              
             
-        @property
-        def height(self):
-            return self.__height
-        
         @height.setter
         def height(self, value):
+            """validate what adeveloper is trying to assign a variable"""
             self.__height = value
     
 
-        @property
-        def x(self):
-         return self.__x
-        
         @x.setter
         def x(self, value):
+            """validate what adeveloper is trying to assign a variable"""
             self.__x = value
            
 
-        @property
-        def y(self):
-            return self.__y
-        
-
         @y.setter
         def y(self, value):
+            """validate what adeveloper is trying to assign a variable"""
             self.__y = value
             
 
