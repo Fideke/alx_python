@@ -40,10 +40,10 @@ class Rectangle(Base):
         use the logic of the __init__ of the Base class
         Assign each arguement width, height, x, y to the right attribute
         """
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
         super().__init__(id)
 
         @property
