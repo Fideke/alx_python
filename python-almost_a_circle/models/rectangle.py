@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 write the class Rectangle that inherits from Base
 """
