@@ -28,12 +28,16 @@ class Rectangle(Base):
 
         @property
         def width(self):
-            """protect attribute of our class"""
-            return self.__width
+         
+         """protect attribute of our class"""
+
+         return self.__width
         
         @width.setter
         def width(self, value):
+             
              """validate what adeveloper is trying to assign a variable"""
+
              self.__width = value
              
             
