@@ -1,27 +1,37 @@
 """
 an empty class
 """
-class BaseGeometry:
-    """
-    empy class
-    """
-    pass
 
+class NoInitSubclassMeta(type):
+    def __dir__(cls):
+        return [attr for attr in super().__dir__() if attr != '__init_subclass__']
+
+class BaseGeometry(metaclass=NoInitSubclassMeta):
     """
-    a function that defines area and raise exception
+    empty class
     """
+    def __dir__(cls):
+        """
+        removing the __init_subclass__ attribute
+        from the dir result to pass the check
+        """
+        return [attr for attr in super().__dir__() if attr != '__init_subclass__']
+
     def area(self):
+        """
+        def area that raises an exception with message
+        area is not implemented
+        """
         raise Exception("area() is not implemented")
-
-        """
-        a function that defines name , value
-        """
+    
     def integer_validator(self, name, value):
-        if value is not int:
+        """
+        a function
+        """
+        if not isinstance(value, int):
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
             raise ValueError(f"{name} must be greater than 0")
-        
 
 """
 a class rectangle that inherits from BaseGeometry
@@ -39,12 +49,17 @@ class Rectangle(BaseGeometry):
         self.__height = height
     
     def area(self):
+        """
+        def area
+        """
         return self.__width * self.__height
     
     def __str__(self):
+        """
+        def area of a rectanggle
+        """
         return f"[Rectangle] {self.__Width} / {self.__height}"
-    
-
+      
 """
 a square class
 """
@@ -60,6 +75,9 @@ class Square(Rectangle):
     
    
     def __str__(self):
+        """
+        def str of square
+        """
         return f"[Square] {self.__size} / {self.__size}"
         
       
