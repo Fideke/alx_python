@@ -17,5 +17,6 @@ def fetch_hbtn_io_status():
     print("Body response")
     print(f"\t-type: {context_type}")
     print(f"\t-content: {content}")
+    
 if __name__ == "__main__":
     fetch_hbtn_io_status()
