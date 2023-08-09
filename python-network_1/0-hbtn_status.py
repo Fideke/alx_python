@@ -16,3 +16,5 @@ def hbtn_io_status():
     print("Body response")
     print("\t-type:", type(data))
     print("\t-content:", data)
+if __name__ == "__main__":
+    hbtn_io_status()
