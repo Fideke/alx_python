@@ -2,12 +2,7 @@
 """
 a python scripts that fetches https://alu-intranet.hbtn.io/status
 """
-
-
 import requests
-
-
-
 def fetch_hbtn_status():
     """
      you must use the package requests
