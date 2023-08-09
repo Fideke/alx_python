@@ -3,7 +3,7 @@ a python scripts that fetches https://alu-intranet.hbtn.io/status
 """
 import requests
 
-def hbtn_io_status():
+def fetch_hbtn_io_status():
     """
      you must use the package requests
      allowed to import requests only
@@ -17,4 +17,4 @@ def hbtn_io_status():
     print("\t-type:", type(data))
     print("\t-content:", data)
 if __name__ == "__main__":
-    hbtn_io_status()
+    fetch_hbtn_io_status()
