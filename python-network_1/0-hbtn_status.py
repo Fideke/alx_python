@@ -1,8 +1,12 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 a python scripts that fetches https://alu-intranet.hbtn.io/status
 """
+
+
 import requests
+
+
 
 def fetch_hbtn_status():
     """
