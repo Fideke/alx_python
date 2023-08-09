@@ -9,7 +9,7 @@ def fetch_hbtn_io_status():
      allowed to import requests only
     """
 
-    url = "https://alu-intranet.hbtn.io/status"
+    url = 'https://alu-intranet.hbtn.io/status'
     response = requests.get(url)
     context_type = type(response.text)
     content = response.text
@@ -17,6 +17,6 @@ def fetch_hbtn_io_status():
     print("Body response")
     print(f"\t-type: {context_type}")
     print(f"\t-content: {content}")
-    
+
 if __name__ == "__main__":
     fetch_hbtn_io_status()
