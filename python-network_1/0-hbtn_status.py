@@ -11,10 +11,11 @@ def fetch_hbtn_io_status():
 
     url = "https://alu-intranet.hbtn.io/status"
     response = requests.get(url)
-    data = response.json()
+    context_type = type(response.text)
+    content = response.text
 
     print("Body response")
-    print("\t-type:", type(data))
-    print("\t-content:", data)
+    print(f"\t-type: {context_type}")
+    print(f"\t-content: {content}")
 if __name__ == "__main__":
     fetch_hbtn_io_status()
