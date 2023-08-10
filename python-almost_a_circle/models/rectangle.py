@@ -112,7 +112,7 @@ class Rectangle(Base):
                 print(" ", end="")
             for j in range(0, self.__width):
                 print("#", end=" ")
-            print()
+        print()
 
     def __str__(self):
         """
