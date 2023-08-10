@@ -118,8 +118,9 @@ class Rectangle(Base):
         """
         overridding the __str__ method so that it returns [rectangle]
         """
-        return f"[Rectangle] ({self.__id}) {self.__x} / {self.__y} - {self.__width} / {self.__height}"
-        
+        s = "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
+        return s
+    
     def update(self, *args, **kwargs):
         """
         public method that assigns an arguement to each attribute
